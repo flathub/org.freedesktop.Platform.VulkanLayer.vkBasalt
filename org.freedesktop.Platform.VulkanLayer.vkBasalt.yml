@@ -25,11 +25,11 @@ modules:
     sources: &vkBasalt-sources
       - type: git
         url: https://github.com/DadSchoorse/vkBasalt.git
-        tag: v0.3.2.4
-        commit: ee98003229465f9872e983a43a83b8cddc054fce
+        tag: v0.3.2.5
+        commit: d0d37e902360ad2fdd263ec4559c6413c52d95c7
         x-checker-data:
           type: git
-          tag-pattern: "^v([\\d.]+)$"
+          tag-pattern: ^v([\d.]+)$
 
   - name: vkBasalt-32bit
     build-options:
@@ -47,7 +47,8 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
-      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}
+      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak
+        ${FLATPAK_ID}
     sources:
       - type: file
         path: org.freedesktop.Platform.VulkanLayer.vkBasalt.metainfo.xml
