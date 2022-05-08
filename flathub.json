@@ -1,4 +1,5 @@
 {
   "only-arches": ["x86_64"],
+  "end-of-life": "This extension will not work. Please use 'org.freedesktop.Platform.VulkanLayer.vkBasalt//21.08' or above if applicable.",
   "skip-icons-check": true
 }
