@@ -1,8 +1,8 @@
 id: org.freedesktop.Platform.VulkanLayer.vkBasalt
-default-branch: '21.08'
+default-branch: '22.08'
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 build-extension: true
 appstream-compose: false
 sdk-extensions:
