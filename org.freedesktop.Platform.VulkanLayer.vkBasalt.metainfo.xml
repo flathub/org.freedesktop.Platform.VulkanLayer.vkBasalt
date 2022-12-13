@@ -9,6 +9,7 @@
   <project_license>Zlib</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="0.3.2.7" date="2022-12-13"/>
     <release version="0.3.2.6" date="2022-07-29"/>
     <release version="0.3.2.5" date="2022-02-12"/>
     <release version="0.3.2.4" date="2021-01-23"/>
