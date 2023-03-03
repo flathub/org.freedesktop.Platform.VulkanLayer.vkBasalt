@@ -25,8 +25,8 @@ modules:
     sources: &vkBasalt-sources
       - type: git
         url: https://github.com/DadSchoorse/vkBasalt.git
-        tag: v0.3.2.8
-        commit: 2a515a93bc493a99eb3c78fd9640368a232ece0a
+        tag: v0.3.2.9
+        commit: 44e0b7ef31c1ec9565508289e74199ea2702d6b1
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
