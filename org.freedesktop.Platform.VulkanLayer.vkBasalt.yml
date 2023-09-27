@@ -1,5 +1,5 @@
 id: org.freedesktop.Platform.VulkanLayer.vkBasalt
-default-branch: '22.08'
+default-branch: '23.08'
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
@@ -11,8 +11,27 @@ sdk-extensions:
 build-options:
   prefix: /usr/lib/extensions/vulkan/vkBasalt
   prepend-path: /usr/lib/extensions/vulkan/vkBasalt/bin
+  env:
+    C_INCLUDE_PATH: /usr/lib/extensions/vulkan/vkBasalt/include
+    CPLUS_INCLUDE_PATH: /usr/lib/extensions/vulkan/vkBasalt/include
   strip: true
 modules:
+
+  - name: spirv-headers
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DSPIRV_SKIP_EXECUTABLES=ON
+    cleanup:
+      - /bin
+    sources:
+      - type: git
+        url: https://github.com/KhronosGroup/SPIRV-Headers.git
+        tag: sdk-1.3.261.1
+        commit: 124a9665e464ef98b8b718d572d5f329311061eb
+        x-checker-data:
+          type: git
+          tag-pattern: ^sdk-([\d.]+)$
 
   - name: vkBasalt
     post-install:
