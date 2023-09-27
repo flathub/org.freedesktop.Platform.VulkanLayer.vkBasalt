@@ -12,8 +12,8 @@ build-options:
   prefix: /usr/lib/extensions/vulkan/vkBasalt
   prepend-path: /usr/lib/extensions/vulkan/vkBasalt/bin
   env:
-    C_INCLUDE_PATH: /usr/lib/extensions/vulkan/MangoHud/include
-    CPLUS_INCLUDE_PATH: /usr/lib/extensions/vulkan/MangoHud/include
+    C_INCLUDE_PATH: /usr/lib/extensions/vulkan/vkBasalt/include
+    CPLUS_INCLUDE_PATH: /usr/lib/extensions/vulkan/vkBasalt/include
   strip: true
 modules:
 
