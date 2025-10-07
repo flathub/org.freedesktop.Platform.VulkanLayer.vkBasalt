@@ -27,8 +27,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/KhronosGroup/SPIRV-Headers.git
-        tag: vulkan-sdk-1.4.304.0
-        commit: 3f17b2af6784bfa2c5aa5dbb8e0e74a607dd8b3b
+        tag: vulkan-sdk-1.4.328.0
+        commit: 01e0577914a75a2569c846778c2f93aa8e6feddd
         x-checker-data:
           type: git
           tag-pattern: ^vulkan-sdk-([\d.]+)$
